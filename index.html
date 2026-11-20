@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Fintry Wines — Independent wine marketplace</title>
+<meta name="description" content="Shop remarkable wines from independent winemakers and merchants.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="fw-skip" href="#main-content">Skip to content</a>
+<div style="font-family: Manrope, system-ui, sans-serif; color: #280400; background: #FBF8F3">
+
+  <header style="position: relative; z-index: 20; font-family: Manrope, system-ui, sans-serif; color: #280400; background: #FFFFFF; border-bottom: 1px solid #E8DFD4">
+
+  <!-- Utility bar -->
+  <div style="background: #280400; color: #F5EDE3; font-size: 13px">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 9px 40px; display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; justify-content: space-between">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px 28px">
+        <span>Free UK delivery on 6+ bottles</span>
+        <span>Mix any 6, save 10%</span>
+        <span>Every seller independently verified</span>
+      </div>
+      <div style="display: flex; gap: 24px">
+        <a href="#" style="color: #F5EDE3">Sell on Fintry</a>
+        <a href="#" style="color: #F5EDE3">Help &amp; delivery</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logo, search, account -->
+  <div style="max-width: 1360px; margin: 0 auto; padding: 20px 40px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center">
+    <a href="index.html" class="fw-logo" style="display: flex; align-items: center">
+      <img src="assets/img/fintry-logo-dark.png" alt="Fintry Wines home" style="display: block; height: 56px; width: auto">
+    </a>
+    <form role="search" style="flex: 1 1 300px; min-width: 0; display: flex; align-items: center; gap: 10px; height: 48px; padding: 0 6px 0 18px; border: 1px solid #D9CCBE; border-radius: 999px; background: #FBF8F3" action="shop.html">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B5A52" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <label for="site-search" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search</label>
+      <input id="site-search" name="q" type="search" placeholder="Search wines, grapes, regions or sellers" style="flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 15px; color: #280400; outline: none">
+      <button type="submit" style="height: 36px; padding: 0 18px; border: 0; border-radius: 999px; background: #822d4a; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Search</button>
+    </form>
+    <nav aria-label="Account" style="display: flex; gap: 6px; align-items: center">
+      <a href="#" style="display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 64px; padding: 6px; font-size: 12px; font-weight: 600">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>
+        Account
+      </a>
+      <a href="#" style="display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 64px; padding: 6px; font-size: 12px; font-weight: 600">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>
+        Saved
+      </a>
+      <a href="#" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 64px; padding: 6px; font-size: 12px; font-weight: 600">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg>
+        Basket
+        <span id="basket-count" style="position: absolute; top: 0; right: 12px; min-width: 18px; height: 18px; border-radius: 9px; background: #822d4a; color: #FFFFFF; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Primary navigation -->
+  <nav aria-label="Shop" style="border-top: 1px solid #EFE7DC">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 0 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 4px">
+      <button type="button" class="fw-nav-btn" aria-expanded="false" aria-controls="menu-types" data-menu="types" style="display: flex; align-items: center; gap: 8px; padding: 16px 14px; border: 0; background: transparent; font: inherit; font-size: 15px; font-weight: 700; color: #280400; cursor: pointer; border-bottom: 3px solid transparent">
+        Wine Types
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <button type="button" class="fw-nav-btn" aria-expanded="false" aria-controls="menu-location" data-menu="location" style="display: flex; align-items: center; gap: 8px; padding: 16px 14px; border: 0; background: transparent; font: inherit; font-size: 15px; font-weight: 700; color: #280400; cursor: pointer; border-bottom: 3px solid transparent">
+        Wine by Location
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <button type="button" class="fw-nav-btn" aria-expanded="false" aria-controls="menu-offers" data-menu="offers" style="display: flex; align-items: center; gap: 8px; padding: 16px 14px; border: 0; background: transparent; font: inherit; font-size: 15px; font-weight: 700; color: #280400; cursor: pointer; border-bottom: 3px solid transparent">
+        Offers
+        <span style="padding: 2px 7px; border-radius: 999px; background: #822d4a; color: #FFFFFF; font-size: 11px; font-weight: 700">Up to 25%</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <span aria-hidden="true" style="width: 1px; height: 20px; background: #E0D5C8; margin: 0 10px"></span>
+      <a href="#" style="padding: 16px 14px; font-size: 15px; font-weight: 500">Our Sellers</a>
+      <a href="#" style="padding: 16px 14px; font-size: 15px; font-weight: 500">Cases &amp; Gifts</a>
+      <a href="#" style="padding: 16px 14px; font-size: 15px; font-weight: 500">Discover</a>
+      <a href="shop.html" style="margin-left: auto; padding: 16px 0; font-size: 15px; font-weight: 600; color: #822d4a">Shop all wines →</a>
+    </div>
+  </nav>
+
+  <!-- Mega menu: Wine Types -->
+  <div id="menu-types" hidden class="fw-menu" style="position: absolute; left: 0; right: 0; top: 100%; background: #FFFFFF; border-top: 1px solid #E8DFD4; border-bottom: 1px solid #E8DFD4; box-shadow: 0 24px 40px -24px rgba(40,4,0,0.25)">
+      <div style="max-width: 1360px; margin: 0 auto; padding: 32px 40px 40px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #6B5A52; margin-bottom: 8px">BY COLOUR</span>
+          <a href="shop.html" class="fw-link" style="display: flex; align-items: center; gap: 10px; padding: 7px 0; font-size: 15px"><span style="width: 12px; height: 12px; border-radius: 6px; background: #6E1B2E"></span>Red wine</a>
+          <a href="shop.html" class="fw-link" style="display: flex; align-items: center; gap: 10px; padding: 7px 0; font-size: 15px"><span style="width: 12px; height: 12px; border-radius: 6px; background: #E9D88F"></span>White wine</a>
+          <a href="shop.html" class="fw-link" style="display: flex; align-items: center; gap: 10px; padding: 7px 0; font-size: 15px"><span style="width: 12px; height: 12px; border-radius: 6px; background: #EFB2A6"></span>Rosé</a>
+          <a href="shop.html" class="fw-link" style="display: flex; align-items: center; gap: 10px; padding: 7px 0; font-size: 15px"><span style="width: 12px; height: 12px; border-radius: 6px; background: #F3E6BE; border: 1px solid #D9C88F"></span>Sparkling &amp; Champagne</a>
+          <a href="shop.html" class="fw-link" style="display: flex; align-items: center; gap: 10px; padding: 7px 0; font-size: 15px"><span style="width: 12px; height: 12px; border-radius: 6px; background: #D98C3A"></span>Orange wine</a>
+          <a href="shop.html" class="fw-link" style="display: flex; align-items: center; gap: 10px; padding: 7px 0; font-size: 15px"><span style="width: 12px; height: 12px; border-radius: 6px; background: #8A4A1C"></span>Dessert &amp; fortified</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #6B5A52; margin-bottom: 8px">BY STYLE</span>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Light &amp; fruity</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Rich &amp; full-bodied</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Crisp &amp; dry</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Aromatic &amp; floral</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Organic &amp; natural</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Low &amp; no alcohol</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #6B5A52; margin-bottom: 8px">BY GRAPE</span>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Pinot Noir</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Malbec</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Tempranillo</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Sauvignon Blanc</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Chardonnay</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px; font-weight: 600; color: #822d4a">All grapes →</a>
+        </div>
+        <a href="shop.html" class="fw-tile" style="display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; min-height: 240px; padding: 24px; border-radius: 12px; background: #2F4A3A; color: #F5EDE3">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #CFE0D3">NEW THIS MONTH</span>
+          <span style="font-family: Fraunces, Georgia, serif; font-size: 26px; line-height: 1.15; color: #FFFFFF">Winter reds from small growers</span>
+          <span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Explore the edit <span class="fw-go">→</span></span>
+        </a>
+      </div>
+    </div>
+
+  <!-- Mega menu: Wine by Location -->
+  <div id="menu-location" hidden class="fw-menu" style="position: absolute; left: 0; right: 0; top: 100%; background: #FFFFFF; border-top: 1px solid #E8DFD4; border-bottom: 1px solid #E8DFD4; box-shadow: 0 24px 40px -24px rgba(40,4,0,0.25)">
+      <div style="max-width: 1360px; margin: 0 auto; padding: 32px 40px 40px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #6B5A52; margin-bottom: 8px">EUROPE</span>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">France</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Italy</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Spain</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Portugal</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Germany &amp; Austria</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">England &amp; Wales</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #6B5A52; margin-bottom: 8px">REST OF THE WORLD</span>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Australia</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">New Zealand</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">South Africa</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Chile</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Argentina</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">USA</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #6B5A52; margin-bottom: 8px">FAMOUS REGIONS</span>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Bordeaux</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Burgundy</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Rioja</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Tuscany</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Marlborough</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px; font-weight: 600; color: #822d4a">All regions →</a>
+        </div>
+        <a href="shop.html" class="fw-tile" style="display: flex; flex-direction: column; justify-content: space-between; gap: 8px; min-height: 240px; padding: 24px; border-radius: 12px; background: #F3ECE2; color: #280400">
+          <svg width="100%" height="110" viewBox="0 0 220 110" fill="none" stroke="#822d4a" stroke-width="1.4" aria-hidden="true"><path d="M20 70c18-22 38-30 60-24s40 2 56-14 40-18 64-6"></path><path d="M10 88c26-10 50-8 74 0s52 6 76-6 40-10 50-6" stroke="#2F4A3A"></path><circle cx="80" cy="46" r="4" fill="#822d4a"></circle><circle cx="150" cy="30" r="4" fill="#822d4a"></circle><circle cx="58" cy="82" r="4" fill="#2F4A3A" stroke="#2F4A3A"></circle></svg>
+          <span style="font-family: Fraunces, Georgia, serif; font-size: 24px; line-height: 1.15">Explore by map</span>
+          <span style="font-size: 14px; font-weight: 600; color: #822d4a">Find wines near any vineyard <span class="fw-go">→</span></span>
+        </a>
+      </div>
+    </div>
+
+  <!-- Mega menu: Offers -->
+  <div id="menu-offers" hidden class="fw-menu" style="position: absolute; left: 0; right: 0; top: 100%; background: #FFFFFF; border-top: 1px solid #E8DFD4; border-bottom: 1px solid #E8DFD4; box-shadow: 0 24px 40px -24px rgba(40,4,0,0.25)">
+      <div style="max-width: 1360px; margin: 0 auto; padding: 32px 40px 40px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
+        <a href="shop.html" class="fw-tile" style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 12px; background: #822d4a; color: #FFFFFF; min-height: 200px; justify-content: space-between">
+          <span class="fw-big" style="font-family: Fraunces, Georgia, serif; font-size: 44px; line-height: 1">10% off</span>
+          <span style="font-size: 16px; font-weight: 600">Mix any 6 bottles</span>
+          <span style="font-size: 14px; color: #F3D9E0">From any seller, applied in basket</span>
+        </a>
+        <a href="shop.html" class="fw-tile" style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 12px; background: #F3ECE2; min-height: 200px; justify-content: space-between">
+          <span class="fw-big" style="font-family: Fraunces, Georgia, serif; font-size: 44px; line-height: 1; color: #822d4a">Under £10</span>
+          <span style="font-size: 16px; font-weight: 600">Everyday favourites</span>
+          <span style="font-size: 14px; color: #6B5A52">Great value, chosen by our buyers</span>
+        </a>
+        <a href="shop.html" class="fw-tile" style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 12px; background: #F3ECE2; min-height: 200px; justify-content: space-between">
+          <span class="fw-big" style="font-family: Fraunces, Georgia, serif; font-size: 44px; line-height: 1; color: #2F4A3A">Cases</span>
+          <span style="font-size: 16px; font-weight: 600">Mixed &amp; single-wine cases</span>
+          <span style="font-size: 14px; color: #6B5A52">Save up to 25% on 12 bottles</span>
+        </a>
+        <div style="display: flex; flex-direction: column; gap: 4px; padding-left: 8px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #6B5A52; margin-bottom: 8px">MORE OFFERS</span>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Bin ends &amp; last bottles</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Seller of the month</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Free delivery wines</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px">Member prices</a>
+          <a href="shop.html" class="fw-link" style="padding: 7px 0; font-size: 15px; font-weight: 600; color: #822d4a">All offers →</a>
+        </div>
+      </div>
+    </div>
+</header>
+
+  <main id="main-content">
+  <!-- HERO -->
+  <section style="background: #F3ECE2">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 72px 40px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+      <div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 24px">
+        <span class="fw-up d1" style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #2F4A3A">THE INDEPENDENT WINE MARKETPLACE</span>
+        <h1 class="fw-up d2" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 64px; line-height: 1.04; letter-spacing: -1px; color: #280400">Remarkable wines, straight from the people who make them.</h1>
+        <p class="fw-up d3" style="margin: 0; max-width: 520px; font-size: 18px; line-height: 1.6; color: #5A4A43">Shop hundreds of independent winemakers and merchants in one place. Every bottle comes with its full profile, so you know exactly what you are pouring.</p>
+        <div class="fw-up d4" style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="shop.html" class="fw-btn" style="display: inline-flex; align-items: center; height: 52px; padding: 0 28px; border-radius: 999px; background: #822d4a; color: #FFFFFF; font-size: 16px; font-weight: 600">Shop all wines</a>
+          <a href="#" style="display: inline-flex; align-items: center; height: 52px; padding: 0 28px; border-radius: 999px; border: 1.5px solid #280400; color: #280400; font-size: 16px; font-weight: 600">Meet the sellers</a>
+        </div>
+        <div class="fw-up d5" style="display: flex; flex-wrap: wrap; gap: 32px; padding-top: 12px">
+          <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: Fraunces, Georgia, serif; font-size: 26px; color: #822d4a">[2,400]+</span><span style="font-size: 13px; color: #5A4A43">wines to explore</span></div>
+          <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: Fraunces, Georgia, serif; font-size: 26px; color: #822d4a">[180]</span><span style="font-size: 13px; color: #5A4A43">independent sellers</span></div>
+          <div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: Fraunces, Georgia, serif; font-size: 26px; color: #822d4a">[4.8]/5</span><span style="font-size: 13px; color: #5A4A43">average customer rating</span></div>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; display: flex; justify-content: center">
+        <div class="fw-arch" style="position: relative; width: 100%; max-width: 520px; height: 480px; border-radius: 260px 260px 20px 20px; background: #822d4a; display: flex; align-items: flex-end; justify-content: center; gap: 18px; padding-bottom: 36px; box-sizing: border-box; overflow: hidden">
+          <span class="fw-bottle b1" style="display: block"><svg width="84" height="262" viewBox="0 0 60 200" aria-hidden="true"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#8FA572"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#E9D88F"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#FBF8F3"></rect><rect x="18" y="130" width="24" height="3" fill="#2F4A3A"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect></svg></span>
+          <span class="fw-bottle b2" style="display: block"><svg width="104" height="326" viewBox="0 0 60 200" aria-hidden="true"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#2B1512"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#C9A86A"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#F3ECE2"></rect><rect x="18" y="130" width="24" height="3" fill="#822d4a"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect><rect x="22" y="152" width="16" height="2" fill="#6B5A52"></rect></svg></span>
+          <span class="fw-bottle b3" style="display: block"><svg width="84" height="262" viewBox="0 0 60 200" aria-hidden="true"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#EFB2A6"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#FBF8F3"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#FBF8F3"></rect><rect x="18" y="130" width="24" height="3" fill="#822d4a"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect></svg></span>
+          <div class="fw-up d5" style="position: absolute; top: 40px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; color: #FFFFFF; text-align: center">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #F3D9E0">THIS WEEK ONLY</span>
+            <span class="fw-badge" style="font-family: Fraunces, Georgia, serif; font-size: 30px">Mix any 6, save 10%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE MAIN FILTERS -->
+  <section class="fw-reveal" style="max-width: 1360px; margin: 0 auto; padding: 80px 40px 40px">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px; margin-bottom: 32px">
+      <h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 40px; letter-spacing: -0.5px">Start with what you love</h2>
+      <p style="margin: 0; font-size: 16px; color: #5A4A43">Three ways in. Every route ends at the right bottle.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
+
+      <!-- Wine types -->
+      <div class="fw-card" style="display: flex; flex-direction: column; gap: 20px; padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E8DFD4">
+        <div style="display: flex; justify-content: space-between; align-items: baseline">
+          <h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 26px">Wine Types</h3>
+          <a href="shop.html" style="font-size: 14px; font-weight: 600; color: #822d4a">View all</a>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+          
+            <a href="shop.html" class="fw-type" style="display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 14px; border-radius: 10px; background: #FBF8F3; font-size: 15px; font-weight: 600">
+              <span class="fw-dot" style="width: 26px; height: 26px; border-radius: 13px; background: #6E1B2E; flex-shrink: 0"></span>Red
+            </a>
+          
+            <a href="shop.html" class="fw-type" style="display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 14px; border-radius: 10px; background: #FBF8F3; font-size: 15px; font-weight: 600">
+              <span class="fw-dot" style="width: 26px; height: 26px; border-radius: 13px; background: #E9D88F; flex-shrink: 0"></span>White
+            </a>
+          
+            <a href="shop.html" class="fw-type" style="display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 14px; border-radius: 10px; background: #FBF8F3; font-size: 15px; font-weight: 600">
+              <span class="fw-dot" style="width: 26px; height: 26px; border-radius: 13px; background: #EFB2A6; flex-shrink: 0"></span>Rosé
+            </a>
+          
+            <a href="shop.html" class="fw-type" style="display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 14px; border-radius: 10px; background: #FBF8F3; font-size: 15px; font-weight: 600">
+              <span class="fw-dot" style="width: 26px; height: 26px; border-radius: 13px; background: #F3E6BE; flex-shrink: 0"></span>Sparkling
+            </a>
+          
+            <a href="shop.html" class="fw-type" style="display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 14px; border-radius: 10px; background: #FBF8F3; font-size: 15px; font-weight: 600">
+              <span class="fw-dot" style="width: 26px; height: 26px; border-radius: 13px; background: #D98C3A; flex-shrink: 0"></span>Orange
+            </a>
+          
+            <a href="shop.html" class="fw-type" style="display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 14px; border-radius: 10px; background: #FBF8F3; font-size: 15px; font-weight: 600">
+              <span class="fw-dot" style="width: 26px; height: 26px; border-radius: 13px; background: #8A4A1C; flex-shrink: 0"></span>Dessert
+            </a>
+          
+        </div>
+      </div>
+
+      <!-- Location -->
+      <div class="fw-card" style="display: flex; flex-direction: column; gap: 20px; padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E8DFD4">
+        <div style="display: flex; justify-content: space-between; align-items: baseline">
+          <h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 26px">Wine by Location</h3>
+          <a href="shop.html" style="font-size: 14px; font-weight: 600; color: #822d4a">View all</a>
+        </div>
+        <div style="display: flex; flex-direction: column">
+          
+            <a href="shop.html" class="fw-row" style="display: flex; justify-content: space-between; align-items: center; min-height: 44px; padding-right: 4px; border-radius: 6px; border-bottom: 1px solid #EFE7DC; font-size: 15px">
+              <span style="font-weight: 600">France</span>
+              <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6B5A52">Bordeaux, Burgundy, Rhône <span class="fw-go" aria-hidden="true">→</span></span>
+            </a>
+          
+            <a href="shop.html" class="fw-row" style="display: flex; justify-content: space-between; align-items: center; min-height: 44px; padding-right: 4px; border-radius: 6px; border-bottom: 1px solid #EFE7DC; font-size: 15px">
+              <span style="font-weight: 600">Italy</span>
+              <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6B5A52">Tuscany, Piedmont, Veneto <span class="fw-go" aria-hidden="true">→</span></span>
+            </a>
+          
+            <a href="shop.html" class="fw-row" style="display: flex; justify-content: space-between; align-items: center; min-height: 44px; padding-right: 4px; border-radius: 6px; border-bottom: 1px solid #EFE7DC; font-size: 15px">
+              <span style="font-weight: 600">Spain</span>
+              <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6B5A52">Rioja, Ribera, Galicia <span class="fw-go" aria-hidden="true">→</span></span>
+            </a>
+          
+            <a href="shop.html" class="fw-row" style="display: flex; justify-content: space-between; align-items: center; min-height: 44px; padding-right: 4px; border-radius: 6px; border-bottom: 1px solid #EFE7DC; font-size: 15px">
+              <span style="font-weight: 600">New Zealand</span>
+              <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6B5A52">Marlborough, Central Otago <span class="fw-go" aria-hidden="true">→</span></span>
+            </a>
+          
+            <a href="shop.html" class="fw-row" style="display: flex; justify-content: space-between; align-items: center; min-height: 44px; padding-right: 4px; border-radius: 6px; border-bottom: 1px solid #EFE7DC; font-size: 15px">
+              <span style="font-weight: 600">Australia</span>
+              <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6B5A52">Barossa, Margaret River <span class="fw-go" aria-hidden="true">→</span></span>
+            </a>
+          
+            <a href="shop.html" class="fw-row" style="display: flex; justify-content: space-between; align-items: center; min-height: 44px; padding-right: 4px; border-radius: 6px; border-bottom: 1px solid #EFE7DC; font-size: 15px">
+              <span style="font-weight: 600">South America</span>
+              <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6B5A52">Mendoza, Maipo <span class="fw-go" aria-hidden="true">→</span></span>
+            </a>
+          
+        </div>
+      </div>
+
+      <!-- Offers -->
+      <div class="fw-card" style="display: flex; flex-direction: column; gap: 20px; padding: 28px; border-radius: 16px; background: #280400; color: #F5EDE3">
+        <div style="display: flex; justify-content: space-between; align-items: baseline">
+          <h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 26px; color: #FFFFFF">Offers</h3>
+          <a href="shop.html" style="font-size: 14px; font-weight: 600; color: #F3D9E0">View all</a>
+        </div>
+        <a href="shop.html" class="fw-offer" style="display: flex; justify-content: space-between; align-items: center; padding: 18px; border-radius: 10px; background: #822d4a; color: #FFFFFF">
+          <span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Mix any 6, save 10%</span><span style="font-size: 13px; color: #F3D9E0">Across every seller</span></span>
+          <span class="fw-go" aria-hidden="true" style="font-size: 20px">→</span>
+        </a>
+        <a href="shop.html" class="fw-offer fw-offer-dark" style="display: flex; justify-content: space-between; align-items: center; padding: 18px; border-radius: 10px; background: #3A1712; color: #FFFFFF">
+          <span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Case deals, up to 25% off</span><span style="font-size: 13px; color: #E2D3C6">12-bottle mixed &amp; single cases</span></span>
+          <span class="fw-go" aria-hidden="true" style="font-size: 20px">→</span>
+        </a>
+        <a href="shop.html" class="fw-offer fw-offer-dark" style="display: flex; justify-content: space-between; align-items: center; padding: 18px; border-radius: 10px; background: #3A1712; color: #FFFFFF">
+          <span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Under £10</span><span style="font-size: 13px; color: #E2D3C6">Everyday wines worth opening</span></span>
+          <span class="fw-go" aria-hidden="true" style="font-size: 20px">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WINES -->
+  <section class="fw-reveal" style="max-width: 1360px; margin: 0 auto; padding: 56px 40px">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 28px">
+      <h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 40px; letter-spacing: -0.5px">Bestsellers this week</h2>
+      <div role="tablist" aria-label="Filter bestsellers" style="display: flex; flex-wrap: wrap; gap: 8px">
+        
+          <button type="button" role="tab" class="fw-tab" data-tab="All" aria-selected="true">All</button>
+        
+          <button type="button" role="tab" class="fw-tab" data-tab="Red" aria-selected="false">Red</button>
+        
+          <button type="button" role="tab" class="fw-tab" data-tab="White" aria-selected="false">White</button>
+        
+          <button type="button" role="tab" class="fw-tab" data-tab="Rosé" aria-selected="false">Rosé</button>
+        
+          <button type="button" role="tab" class="fw-tab" data-tab="Sparkling" aria-selected="false">Sparkling</button>
+        
+      </div>
+    </div>
+    <div id="bestsellers" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px">
+      
+        <article class="fw-product" data-type="Red"  style="display: flex; flex-direction: column; border-radius: 16px; background: #FFFFFF; border: 1px solid #E8DFD4; overflow: hidden">
+          <div style="position: relative">
+          <a href="product.html" class="fw-shot" style="position: relative; display: flex; justify-content: center; align-items: flex-end; height: 280px; padding-bottom: 20px; box-sizing: border-box; background: #F1E4E2">
+            <svg width="76" height="250" viewBox="0 0 60 200" role="img" aria-label="Les Terrasses du Sud, Côtes du Rhône Villages 2022 bottle"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#2B1512"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#6E1B2E"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#FBF8F3"></rect><rect x="18" y="130" width="24" height="3" fill="#822d4a"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect><rect x="22" y="152" width="16" height="2" fill="#6B5A52"></rect></svg>
+            
+              <span style="position: absolute; top: 14px; left: 14px; padding: 5px 10px; border-radius: 999px; background: #2F4A3A; color: #FFFFFF; font-size: 12px; font-weight: 700">Seller favourite</span>
+            
+          </a>
+          <button type="button" data-save aria-pressed="false" aria-label="Save Les Terrasses du Sud, Côtes du Rhône Villages 2022" style="position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 22px; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#280400" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>
+          </button>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; flex: 1">
+            <a href="#" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #2F4A3A; font-weight: 600">
+              <span>Sold by Maison Arnaud</span><span aria-hidden="true">·</span><span>★ 4.9</span>
+            </a>
+            <a href="product.html" style="font-family: Fraunces, Georgia, serif; font-size: 20px; line-height: 1.25; font-weight: 500; color: #280400">Les Terrasses du Sud, Côtes du Rhône Villages 2022</a>
+            <span style="font-size: 14px; color: #5A4A43">Red · Rhône, France · Grenache, Syrah</span>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5A4A43">
+              <span style="width: 44px">Body</span>
+              <span style="display: flex; gap: 4px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span></span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-top: auto; padding-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 2px">
+                <span style="display: flex; align-items: baseline; gap: 8px"><span style="font-size: 22px; font-weight: 700">£14.50</span></span>
+                <span style="font-size: 13px; color: #822d4a; font-weight: 600">£13.05 in any mixed 6</span>
+              </div>
+              <button type="button" class="fw-btn" data-add aria-label="Add Les Terrasses du Sud, Côtes du Rhône Villages 2022 to basket" style="height: 44px; padding: 0 18px; border-radius: 999px; border: 0; background: #822d4a; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Add</button>
+            </div>
+          </div>
+        </article>
+      
+        <article class="fw-product" data-type="White"  style="display: flex; flex-direction: column; border-radius: 16px; background: #FFFFFF; border: 1px solid #E8DFD4; overflow: hidden">
+          <div style="position: relative">
+          <a href="product.html" class="fw-shot" style="position: relative; display: flex; justify-content: center; align-items: flex-end; height: 280px; padding-bottom: 20px; box-sizing: border-box; background: #EEF1E4">
+            <svg width="76" height="250" viewBox="0 0 60 200" role="img" aria-label="Hollow Creek Sauvignon Blanc 2024 bottle"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#8FA572"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#E9D88F"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#FBF8F3"></rect><rect x="18" y="130" width="24" height="3" fill="#822d4a"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect><rect x="22" y="152" width="16" height="2" fill="#6B5A52"></rect></svg>
+            
+              <span style="position: absolute; top: 14px; left: 14px; padding: 5px 10px; border-radius: 999px; background: #822d4a; color: #FFFFFF; font-size: 12px; font-weight: 700">15% off</span>
+            
+          </a>
+          <button type="button" data-save aria-pressed="false" aria-label="Save Hollow Creek Sauvignon Blanc 2024" style="position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 22px; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#280400" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>
+          </button>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; flex: 1">
+            <a href="#" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #2F4A3A; font-weight: 600">
+              <span>Sold by Southern Cross Wines</span><span aria-hidden="true">·</span><span>★ 4.8</span>
+            </a>
+            <a href="product.html" style="font-family: Fraunces, Georgia, serif; font-size: 20px; line-height: 1.25; font-weight: 500; color: #280400">Hollow Creek Sauvignon Blanc 2024</a>
+            <span style="font-size: 14px; color: #5A4A43">White · Marlborough, New Zealand · Sauvignon Blanc</span>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5A4A43">
+              <span style="width: 44px">Body</span>
+              <span style="display: flex; gap: 4px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span></span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-top: auto; padding-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 2px">
+                <span style="display: flex; align-items: baseline; gap: 8px"><span style="font-size: 22px; font-weight: 700">£12.99</span><span style="font-size: 14px; color: #6B5A52; text-decoration: line-through">£15.29</span></span>
+                <span style="font-size: 13px; color: #822d4a; font-weight: 600">£11.69 in any mixed 6</span>
+              </div>
+              <button type="button" class="fw-btn" data-add aria-label="Add Hollow Creek Sauvignon Blanc 2024 to basket" style="height: 44px; padding: 0 18px; border-radius: 999px; border: 0; background: #822d4a; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Add</button>
+            </div>
+          </div>
+        </article>
+      
+        <article class="fw-product" data-type="Red"  style="display: flex; flex-direction: column; border-radius: 16px; background: #FFFFFF; border: 1px solid #E8DFD4; overflow: hidden">
+          <div style="position: relative">
+          <a href="product.html" class="fw-shot" style="position: relative; display: flex; justify-content: center; align-items: flex-end; height: 280px; padding-bottom: 20px; box-sizing: border-box; background: #F1E4E2">
+            <svg width="76" height="250" viewBox="0 0 60 200" role="img" aria-label="Viña Cerrada Rioja Reserva 2019 bottle"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#3A1F1A"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#C9A86A"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#FBF8F3"></rect><rect x="18" y="130" width="24" height="3" fill="#822d4a"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect><rect x="22" y="152" width="16" height="2" fill="#6B5A52"></rect></svg>
+            
+          </a>
+          <button type="button" data-save aria-pressed="false" aria-label="Save Viña Cerrada Rioja Reserva 2019" style="position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 22px; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#280400" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>
+          </button>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; flex: 1">
+            <a href="#" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #2F4A3A; font-weight: 600">
+              <span>Sold by Bodega Collective</span><span aria-hidden="true">·</span><span>★ 4.7</span>
+            </a>
+            <a href="product.html" style="font-family: Fraunces, Georgia, serif; font-size: 20px; line-height: 1.25; font-weight: 500; color: #280400">Viña Cerrada Rioja Reserva 2019</a>
+            <span style="font-size: 14px; color: #5A4A43">Red · Rioja, Spain · Tempranillo</span>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5A4A43">
+              <span style="width: 44px">Body</span>
+              <span style="display: flex; gap: 4px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span></span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-top: auto; padding-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 2px">
+                <span style="display: flex; align-items: baseline; gap: 8px"><span style="font-size: 22px; font-weight: 700">£18.00</span></span>
+                <span style="font-size: 13px; color: #822d4a; font-weight: 600">£16.20 in any mixed 6</span>
+              </div>
+              <button type="button" class="fw-btn" data-add aria-label="Add Viña Cerrada Rioja Reserva 2019 to basket" style="height: 44px; padding: 0 18px; border-radius: 999px; border: 0; background: #822d4a; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Add</button>
+            </div>
+          </div>
+        </article>
+      
+        <article class="fw-product" data-type="Rosé"  style="display: flex; flex-direction: column; border-radius: 16px; background: #FFFFFF; border: 1px solid #E8DFD4; overflow: hidden">
+          <div style="position: relative">
+          <a href="product.html" class="fw-shot" style="position: relative; display: flex; justify-content: center; align-items: flex-end; height: 280px; padding-bottom: 20px; box-sizing: border-box; background: #F8E9E4">
+            <svg width="76" height="250" viewBox="0 0 60 200" role="img" aria-label="Côte Rose Provence Rosé 2024 bottle"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#EFB2A6"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#FBF8F3"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#FBF8F3"></rect><rect x="18" y="130" width="24" height="3" fill="#822d4a"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect><rect x="22" y="152" width="16" height="2" fill="#6B5A52"></rect></svg>
+            
+              <span style="position: absolute; top: 14px; left: 14px; padding: 5px 10px; border-radius: 999px; background: #2F4A3A; color: #FFFFFF; font-size: 12px; font-weight: 700">Organic</span>
+            
+          </a>
+          <button type="button" data-save aria-pressed="false" aria-label="Save Côte Rose Provence Rosé 2024" style="position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 22px; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#280400" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>
+          </button>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; flex: 1">
+            <a href="#" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #2F4A3A; font-weight: 600">
+              <span>Sold by Riviera Cellars</span><span aria-hidden="true">·</span><span>★ 4.9</span>
+            </a>
+            <a href="product.html" style="font-family: Fraunces, Georgia, serif; font-size: 20px; line-height: 1.25; font-weight: 500; color: #280400">Côte Rose Provence Rosé 2024</a>
+            <span style="font-size: 14px; color: #5A4A43">Rosé · Provence, France · Grenache, Cinsault</span>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5A4A43">
+              <span style="width: 44px">Body</span>
+              <span style="display: flex; gap: 4px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span></span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-top: auto; padding-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 2px">
+                <span style="display: flex; align-items: baseline; gap: 8px"><span style="font-size: 22px; font-weight: 700">£16.75</span></span>
+                <span style="font-size: 13px; color: #822d4a; font-weight: 600">£15.08 in any mixed 6</span>
+              </div>
+              <button type="button" class="fw-btn" data-add aria-label="Add Côte Rose Provence Rosé 2024 to basket" style="height: 44px; padding: 0 18px; border-radius: 999px; border: 0; background: #822d4a; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Add</button>
+            </div>
+          </div>
+        </article>
+      
+        <article class="fw-product" data-type="Sparkling" hidden style="display: flex; flex-direction: column; border-radius: 16px; background: #FFFFFF; border: 1px solid #E8DFD4; overflow: hidden">
+          <div style="position: relative">
+          <a href="product.html" class="fw-shot" style="position: relative; display: flex; justify-content: center; align-items: flex-end; height: 280px; padding-bottom: 20px; box-sizing: border-box; background: #F4EFDF">
+            <svg width="76" height="250" viewBox="0 0 60 200" role="img" aria-label="Highfield English Classic Cuvée NV bottle"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#2E3B2C"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#C9A86A"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#FBF8F3"></rect><rect x="18" y="130" width="24" height="3" fill="#822d4a"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect><rect x="22" y="152" width="16" height="2" fill="#6B5A52"></rect></svg>
+            
+              <span style="position: absolute; top: 14px; left: 14px; padding: 5px 10px; border-radius: 999px; background: #822d4a; color: #FFFFFF; font-size: 12px; font-weight: 700">New in</span>
+            
+          </a>
+          <button type="button" data-save aria-pressed="false" aria-label="Save Highfield English Classic Cuvée NV" style="position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 22px; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#280400" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>
+          </button>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; flex: 1">
+            <a href="#" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #2F4A3A; font-weight: 600">
+              <span>Sold by Downs & Dale</span><span aria-hidden="true">·</span><span>★ 4.8</span>
+            </a>
+            <a href="product.html" style="font-family: Fraunces, Georgia, serif; font-size: 20px; line-height: 1.25; font-weight: 500; color: #280400">Highfield English Classic Cuvée NV</a>
+            <span style="font-size: 14px; color: #5A4A43">Sparkling · Sussex, England · Chardonnay, Pinot Noir</span>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5A4A43">
+              <span style="width: 44px">Body</span>
+              <span style="display: flex; gap: 4px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span></span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-top: auto; padding-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 2px">
+                <span style="display: flex; align-items: baseline; gap: 8px"><span style="font-size: 22px; font-weight: 700">£29.00</span></span>
+                <span style="font-size: 13px; color: #822d4a; font-weight: 600">£26.10 in any mixed 6</span>
+              </div>
+              <button type="button" class="fw-btn" data-add aria-label="Add Highfield English Classic Cuvée NV to basket" style="height: 44px; padding: 0 18px; border-radius: 999px; border: 0; background: #822d4a; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Add</button>
+            </div>
+          </div>
+        </article>
+      
+        <article class="fw-product" data-type="White" hidden style="display: flex; flex-direction: column; border-radius: 16px; background: #FFFFFF; border: 1px solid #E8DFD4; overflow: hidden">
+          <div style="position: relative">
+          <a href="product.html" class="fw-shot" style="position: relative; display: flex; justify-content: center; align-items: flex-end; height: 280px; padding-bottom: 20px; box-sizing: border-box; background: #EEF1E4">
+            <svg width="76" height="250" viewBox="0 0 60 200" role="img" aria-label="Albariño Rías Baixas 2023 bottle"><path d="M24 6h12v54c0 10 16 18 16 34v92a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V94c0-16 16-24 16-34z" fill="#A9B98A"></path><rect x="23" y="4" width="14" height="26" rx="2" fill="#2F4A3A"></rect><rect x="12" y="118" width="36" height="46" rx="2" fill="#FBF8F3"></rect><rect x="18" y="130" width="24" height="3" fill="#822d4a"></rect><rect x="20" y="138" width="20" height="2" fill="#6B5A52"></rect><rect x="22" y="152" width="16" height="2" fill="#6B5A52"></rect></svg>
+            
+          </a>
+          <button type="button" data-save aria-pressed="false" aria-label="Save Albariño Rías Baixas 2023" style="position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border-radius: 22px; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#280400" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>
+          </button>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; flex: 1">
+            <a href="#" style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #2F4A3A; font-weight: 600">
+              <span>Sold by Bodega Collective</span><span aria-hidden="true">·</span><span>★ 4.6</span>
+            </a>
+            <a href="product.html" style="font-family: Fraunces, Georgia, serif; font-size: 20px; line-height: 1.25; font-weight: 500; color: #280400">Albariño Rías Baixas 2023</a>
+            <span style="font-size: 14px; color: #5A4A43">White · Galicia, Spain · Albariño</span>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5A4A43">
+              <span style="width: 44px">Body</span>
+              <span style="display: flex; gap: 4px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #822d4a"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E8DFD4"></span></span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-top: auto; padding-top: 10px">
+              <div style="display: flex; flex-direction: column; gap: 2px">
+                <span style="display: flex; align-items: baseline; gap: 8px"><span style="font-size: 22px; font-weight: 700">£13.50</span></span>
+                <span style="font-size: 13px; color: #822d4a; font-weight: 600">£12.15 in any mixed 6</span>
+              </div>
+              <button type="button" class="fw-btn" data-add aria-label="Add Albariño Rías Baixas 2023 to basket" style="height: 44px; padding: 0 18px; border-radius: 999px; border: 0; background: #822d4a; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Add</button>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+  </section>
+
+  <!-- MARKETPLACE -->
+  <section style="background: #2F4A3A; color: #E8EFE9">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 80px 40px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 28px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #CFE0D3">HOW FINTRY WORKS</span>
+        <h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 44px; line-height: 1.1; color: #FFFFFF">One basket. Hundreds of independent sellers.</h2>
+        <div style="display: flex; flex-direction: column; gap: 22px">
+          <div style="display: flex; gap: 18px"><span style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 20px; background: #FFFFFF; color: #2F4A3A; display: flex; align-items: center; justify-content: center; font-weight: 700">1</span><div><div style="font-size: 17px; font-weight: 700; color: #FFFFFF">Browse verified sellers</div><div style="font-size: 15px; line-height: 1.55; margin-top: 4px">Winemakers and merchants are vetted before they can list a single bottle.</div></div></div>
+          <div style="display: flex; gap: 18px"><span style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 20px; background: #FFFFFF; color: #2F4A3A; display: flex; align-items: center; justify-content: center; font-weight: 700">2</span><div><div style="font-size: 17px; font-weight: 700; color: #FFFFFF">Mix bottles from anyone</div><div style="font-size: 15px; line-height: 1.55; margin-top: 4px">Build one basket across sellers. Mix-six savings apply to the whole order.</div></div></div>
+          <div style="display: flex; gap: 18px"><span style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 20px; background: #FFFFFF; color: #2F4A3A; display: flex; align-items: center; justify-content: center; font-weight: 700">3</span><div><div style="font-size: 17px; font-weight: 700; color: #FFFFFF">Checkout once, tracked to your door</div><div style="font-size: 15px; line-height: 1.55; margin-top: 4px">Pay once. Each seller ships, and you follow every parcel from your account.</div></div></div>
+        </div>
+      </div>
+      <article class="fw-reveal" style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 20px; padding: 32px; border-radius: 20px; background: #FBF8F3; color: #280400">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #2F4A3A">SELLER SPOTLIGHT</span>
+        <div style="display: flex; gap: 16px; align-items: center">
+          <span style="width: 64px; height: 64px; border-radius: 32px; background: #822d4a; color: #FFFFFF; font-family: Fraunces, Georgia, serif; font-size: 26px; display: flex; align-items: center; justify-content: center">MA</span>
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <span style="font-family: Fraunces, Georgia, serif; font-size: 24px">Maison Arnaud</span>
+            <span style="font-size: 14px; color: #5A4A43">Family estate · Rhône Valley, France · ★ 4.9 ([320] reviews)</span>
+          </div>
+        </div>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3E2E28">Third-generation growers working old-vine Grenache on the terraces above the Rhône. Every wine is estate-bottled and shipped from the cellar door.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <span style="padding: 6px 12px; border-radius: 999px; background: #EFE7DC; font-size: 13px; font-weight: 600">Organic certified</span>
+          <span style="padding: 6px 12px; border-radius: 999px; background: #EFE7DC; font-size: 13px; font-weight: 600">Ships in 2 days</span>
+          <span style="padding: 6px 12px; border-radius: 999px; background: #EFE7DC; font-size: 13px; font-weight: 600">14 wines listed</span>
+        </div>
+        <a href="#" style="align-self: flex-start; display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 999px; background: #2F4A3A; color: #FFFFFF; font-size: 15px; font-weight: 600">Visit the seller's shop</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- LOCATION GRID -->
+  <section class="fw-reveal" style="max-width: 1360px; margin: 0 auto; padding: 80px 40px 56px">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px; margin-bottom: 28px">
+      <h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 40px; letter-spacing: -0.5px">Travel by the glass</h2>
+      <a href="shop.html" style="font-size: 15px; font-weight: 600; color: #822d4a">All countries &amp; regions →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px">
+        <a href="shop.html" class="fw-place" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 180px; padding: 22px; border-radius: 14px; background: #822d4a; color: #FFFFFF">
+          <span style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px">OLD WORLD</span>
+            <svg class="fw-flag" width="36" height="24" viewBox="0 0 30 20" role="img" aria-label="Flag of France" style="border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 4px 10px -4px rgba(0,0,0,0.4)"><rect width="10" height="20" fill="#0055A4"></rect><rect x="10" width="10" height="20" fill="#FFFFFF"></rect><rect x="20" width="10" height="20" fill="#EF4135"></rect></svg>
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Fraunces, Georgia, serif; font-size: 28px">France</span><span style="display: flex; justify-content: space-between; gap: 8px; font-size: 13px"><span>Bordeaux · Burgundy · Loire</span><span class="fw-go" aria-hidden="true">→</span></span></span>
+        </a>
+        <a href="shop.html" class="fw-place" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 180px; padding: 22px; border-radius: 14px; background: #F3ECE2; color: #280400">
+          <span style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px">OLD WORLD</span>
+            <svg class="fw-flag" width="36" height="24" viewBox="0 0 30 20" role="img" aria-label="Flag of Italy" style="border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 4px 10px -4px rgba(0,0,0,0.4)"><rect width="10" height="20" fill="#009246"></rect><rect x="10" width="10" height="20" fill="#FFFFFF"></rect><rect x="20" width="10" height="20" fill="#CE2B37"></rect></svg>
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Fraunces, Georgia, serif; font-size: 28px">Italy</span><span style="display: flex; justify-content: space-between; gap: 8px; font-size: 13px"><span>Tuscany · Piedmont · Sicily</span><span class="fw-go" aria-hidden="true">→</span></span></span>
+        </a>
+        <a href="shop.html" class="fw-place" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 180px; padding: 22px; border-radius: 14px; background: #F3ECE2; color: #280400">
+          <span style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px">OLD WORLD</span>
+            <svg class="fw-flag" width="36" height="24" viewBox="0 0 30 20" role="img" aria-label="Flag of Spain" style="border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 4px 10px -4px rgba(0,0,0,0.4)"><rect width="30" height="20" fill="#AA151B"></rect><rect y="5" width="30" height="10" fill="#F1BF00"></rect></svg>
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Fraunces, Georgia, serif; font-size: 28px">Spain</span><span style="display: flex; justify-content: space-between; gap: 8px; font-size: 13px"><span>Rioja · Priorat · Rías Baixas</span><span class="fw-go" aria-hidden="true">→</span></span></span>
+        </a>
+        <a href="shop.html" class="fw-place" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 180px; padding: 22px; border-radius: 14px; background: #2F4A3A; color: #FFFFFF">
+          <span style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px">NEW WORLD</span>
+            <svg class="fw-flag" width="36" height="24" viewBox="0 0 30 20" role="img" aria-label="Flag of New Zealand" style="border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 4px 10px -4px rgba(0,0,0,0.4)"><rect width="30" height="20" fill="#012169"></rect><path d="M0,0 L15,10 M15,0 L0,10" stroke="#FFFFFF" stroke-width="2"></path><path d="M0,0 L15,10 M15,0 L0,10" stroke="#C8102E" stroke-width="0.8"></path><path d="M7.5,0 V10 M0,5 H15" stroke="#FFFFFF" stroke-width="3"></path><path d="M7.5,0 V10 M0,5 H15" stroke="#C8102E" stroke-width="1.8"></path><polygon points="22.50,2.90 22.97,4.35 24.50,4.35 23.26,5.25 23.73,6.70 22.50,5.80 21.27,6.70 21.74,5.25 20.50,4.35 22.03,4.35" fill="#FFFFFF"></polygon><polygon points="22.50,3.40 22.86,4.51 24.02,4.51 23.08,5.19 23.44,6.29 22.50,5.61 21.56,6.29 21.92,5.19 20.98,4.51 22.14,4.51" fill="#C8102E"></polygon><polygon points="19.50,8.00 19.95,9.38 21.40,9.38 20.23,10.24 20.68,11.62 19.50,10.76 18.32,11.62 18.77,10.24 17.60,9.38 19.05,9.38" fill="#FFFFFF"></polygon><polygon points="19.50,8.50 19.84,9.54 20.93,9.54 20.04,10.18 20.38,11.21 19.50,10.57 18.62,11.21 18.96,10.18 18.07,9.54 19.16,9.54" fill="#C8102E"></polygon><polygon points="25.50,7.00 25.95,8.38 27.40,8.38 26.23,9.24 26.68,10.62 25.50,9.76 24.32,10.62 24.77,9.24 23.60,8.38 25.05,8.38" fill="#FFFFFF"></polygon><polygon points="25.50,7.50 25.84,8.54 26.93,8.54 26.04,9.18 26.38,10.21 25.50,9.57 24.62,10.21 24.96,9.18 24.07,8.54 25.16,8.54" fill="#C8102E"></polygon><polygon points="22.50,13.70 23.02,15.29 24.69,15.29 23.34,16.27 23.85,17.86 22.50,16.88 21.15,17.86 21.66,16.27 20.31,15.29 21.98,15.29" fill="#FFFFFF"></polygon><polygon points="22.50,14.20 22.90,15.44 24.21,15.44 23.15,16.21 23.56,17.46 22.50,16.69 21.44,17.46 21.85,16.21 20.79,15.44 22.10,15.44" fill="#C8102E"></polygon></svg>
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Fraunces, Georgia, serif; font-size: 28px">New Zealand</span><span style="display: flex; justify-content: space-between; gap: 8px; font-size: 13px"><span>Marlborough · Hawke’s Bay</span><span class="fw-go" aria-hidden="true">→</span></span></span>
+        </a>
+        <a href="shop.html" class="fw-place" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 180px; padding: 22px; border-radius: 14px; background: #F3ECE2; color: #280400">
+          <span style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px">NEW WORLD</span>
+            <svg class="fw-flag" width="36" height="24" viewBox="0 0 30 20" role="img" aria-label="Flag of Argentina" style="border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 4px 10px -4px rgba(0,0,0,0.4)"><rect width="30" height="20" fill="#74ACDF"></rect><rect y="6.67" width="30" height="6.67" fill="#FFFFFF"></rect><circle cx="15" cy="10" r="2.4" fill="#F6B40E"></circle><circle cx="15" cy="10" r="1.4" fill="#E8A70A"></circle></svg>
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Fraunces, Georgia, serif; font-size: 28px">Argentina</span><span style="display: flex; justify-content: space-between; gap: 8px; font-size: 13px"><span>Mendoza · Salta</span><span class="fw-go" aria-hidden="true">→</span></span></span>
+        </a>
+        <a href="shop.html" class="fw-place" style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 180px; padding: 22px; border-radius: 14px; background: #280400; color: #FFFFFF">
+          <span style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px">CLOSE TO HOME</span>
+            <svg class="fw-flag" width="36" height="24" viewBox="0 0 30 20" role="img" aria-label="Flag of England" style="border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 4px 10px -4px rgba(0,0,0,0.4)"><rect width="30" height="20" fill="#FFFFFF"></rect><rect x="12.5" width="5" height="20" fill="#CE1124"></rect><rect y="7.5" width="30" height="5" fill="#CE1124"></rect></svg>
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Fraunces, Georgia, serif; font-size: 28px">England</span><span style="display: flex; justify-content: space-between; gap: 8px; font-size: 13px"><span>Sussex · Kent · Hampshire</span><span class="fw-go" aria-hidden="true">→</span></span></span>
+        </a>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section style="max-width: 1360px; margin: 0 auto; padding: 24px 40px 80px">
+    <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between; padding: 44px; border-radius: 20px; background: #F3ECE2">
+      <div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 8px">
+        <h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 32px">Join the Fintry list</h2>
+        <p style="margin: 0; font-size: 16px; color: #5A4A43">New sellers, small-batch releases and members-only offers. One email a week, no more.</p>
+      </div>
+      <form style="flex: 1 1 420px; display: flex; flex-wrap: wrap; gap: 10px" data-newsletter>
+        <label for="news-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Email address</label>
+        <input id="news-email" type="email" placeholder="Your email address" style="flex: 1 1 240px; height: 52px; padding: 0 20px; border-radius: 999px; border: 1px solid #D9CCBE; background: #FFFFFF; font: inherit; font-size: 15px; color: #280400">
+        <button type="submit" style="height: 52px; padding: 0 28px; border-radius: 999px; border: 0; background: #280400; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Sign up</button>
+      </form>
+    </div>
+  </section>
+
+  </main>
+  <!-- FOOTER -->
+  <footer style="background: #280400; color: #E2D3C6">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 64px 40px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <img src="assets/img/fintry-logo-light.png" alt="Fintry Wines" style="display: block; height: 52px; width: auto; align-self: flex-start">
+        <span style="font-size: 14px; line-height: 1.6">The marketplace for independent wine.</span>
+      </div>
+      <nav aria-label="Shop links" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #FFFFFF">SHOP</span>
+        <a href="shop.html" style="color: #E2D3C6">Wine Types</a><a href="shop.html" style="color: #E2D3C6">Wine by Location</a><a href="shop.html" style="color: #E2D3C6">Offers</a><a href="#" style="color: #E2D3C6">Cases &amp; Gifts</a>
+      </nav>
+      <nav aria-label="Seller links" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #FFFFFF">SELLERS</span>
+        <a href="#" style="color: #E2D3C6">Our sellers</a><a href="#" style="color: #E2D3C6">Sell on Fintry</a><a href="#" style="color: #E2D3C6">Seller standards</a>
+      </nav>
+      <nav aria-label="Help links" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #FFFFFF">HELP</span>
+        <a href="#" style="color: #E2D3C6">Delivery</a><a href="#" style="color: #E2D3C6">Returns</a><a href="#" style="color: #E2D3C6">Contact us</a>
+      </nav>
+    </div>
+    <div style="max-width: 1360px; margin: 0 auto; padding: 20px 40px 32px; border-top: 1px solid #4A2620; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px">
+      <span>You must be 18 or over to buy alcohol. Please drink responsibly.</span>
+      <span>© 2026 Fintry Wines</span>
+    </div>
+  </footer>
+</div>
+<div id="toast" class="fw-toast" role="status" aria-live="polite"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
