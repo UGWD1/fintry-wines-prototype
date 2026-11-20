@@ -1,6 +1,6 @@
 # Fintry Wines — website prototype
 
-A clickable front-end prototype of the Fintry Wines marketplace. It is plain HTML, CSS and JavaScript, so it needs no build step and runs on GitHub Pages as-is.
+A clickable front-end prototype of the Fintry Wines marketplace. Each page is a single self-contained HTML file (styles, scripts and logo are built in), so it needs no build step and runs on GitHub Pages as-is.
 
 ## Pages
 
@@ -23,7 +23,7 @@ All wines, sellers, prices and reviews are sample data.
 ## Publish on GitHub Pages
 
 1. Create a new repository, for example `fintry-wines-prototype`.
-2. Upload everything in this folder to the root of the repository. `index.html` must be at the top level, not inside a subfolder.
+2. Upload `index.html`, `shop.html` and `product.html` to the root of the repository (not inside a subfolder).
 3. Go to **Settings → Pages**.
 4. Under **Build and deployment**, set **Source** to **Deploy from a branch**, then choose the `main` branch and the `/ (root)` folder.
 5. Click **Save**. After a minute or two the site is live at `https://<your-username>.github.io/fintry-wines-prototype/`.
